@@ -1,1 +1,0 @@
-// JavaScript for tabs and lightbox functionality
