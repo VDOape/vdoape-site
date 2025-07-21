@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recognitions – VDO.ape</title>
+  <title>Recognitions</title>
   <link rel="stylesheet" href="/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #ff0000;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header,
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1rem;
+      justify-items: center;
+      padding: 2rem;
+    }
+
+    .award-item {
+      text-align: center;
+    }
+
+    .award-item img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .media-item {
+      background: white;
+      color: black;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .media-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .media-item h3 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1rem;
+    }
+
+    .media-item p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/works/index.html">Works</a>
+      <a href="/recognitions.html">Recognitions</a>
+      <a href="/writings.html">Writings</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
 
-  <!-- Header Navigation -->
-  <nav class="nav">
-    <a href="/">Home</a>
-    <a href="/works/">Works</a>
-    <a href="/recognitions.html">Recognitions</a>
-    <a href="/writings.html">Writings</a>
-    <a href="/about.html">About</a>
-  </nav>
-
-  <!-- Main Content -->
   <main>
-    <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem; text-align: center;">Awards</h1>
+    <h1>Awards</h1>
+    <section class="awards-grid">
+      <div class="award-item"><img src="images/Cannian_Lions.png" alt="Cannes Lions Gold" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/bronze-lion.png" alt="Cannes Lions Bronze" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/os-best-of-discipline-pencil-rank.png" alt="Best of Discipline" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/os-gold-pencil-rank.png" alt="Gold Pencil" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/os-bronze-pencil-rank.png" alt="Bronze Pencil" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/12227641_10153674116675185_614845691565476466_n.jpg" alt="LIA Gold" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/graphite.png" alt="Graphite Pencil" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/wood.png" alt="Wood Pencil" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/spikes.png" alt="Grand Prix" /><p>Grand Prix × 1</p></div>
+      <div class="award-item"><img src="images/spikes.png" alt="Gold" /><p>Gold × 1</p></div>
+      <div class="award-item"><img src="images/spikes.png" alt="Bronze" /><p>Bronze × 3</p></div>
+      <div class="award-item"><img src="images/spikes.png" alt="Agency of the Year" /><p>Agency of the Year × 1</p></div>
+      <div class="award-item"><img src="images/Clio+-+Bronze.png" alt="Clio Bronze" /><p>× 1</p></div>
+      <div class="award-item"><img src="images/GRANDE.jpg" alt="Adfest Grande" /><p>× 1</p></div>
+    </section>
 
-    <!-- Award Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; justify-items: center;">
-      <div><img src="/images/Cannian_Lions.png" alt="Cannes Lions Gold" style="height: 80px;" /><p>Cannes Lions Gold × 1</p></div>
-      <div><img src="/images/bronze-lion.png" alt="Cannes Lions Bronze" style="height: 80px;" /><p>Cannes Lions Bronze × 1</p></div>
-      <div><img src="/images/os-best-of-discipline-pencil-rank.png" alt="One Show Best of Discipline" style="height: 80px;" /><p>Best of Discipline × 1</p></div>
-      <div><img src="/images/os-gold-pencil-rank.png" alt="One Show Gold Pencil" style="height: 80px;" /><p>Gold Pencil × 1</p></div>
-      <div><img src="/images/os-bronze-pencil-rank.png" alt="One Show Bronze Pencil" style="height: 80px;" /><p>Bronze Pencil × 1</p></div>
-      <div><img src="/images/12227641_10153674116675185_614845691565476466_n.jpg" alt="LIA Gold" style="height: 80px;" /><p>LIA Gold × 1</p></div>
-      <div><img src="/images/graphite.png" alt="D&AD Graphite Pencil" style="height: 80px;" /><p>D&AD Graphite × 1</p></div>
-      <div><img src="/images/wood.png" alt="D&AD Wood Pencil" style="height: 80px;" /><p>D&AD Wood × 1</p></div>
-      <div><img src="/images/spikes.png" alt="Spikes Asia" style="height: 80px;" /><p>Spikes Asia Grand Prix × 1<br>Gold × 1<br>Bronze × 3<br>Agency of the Year × 1</p></div>
-      <div><img src="/images/Clio+-+Bronze.png" alt="Clio Bronze" style="height: 80px;" /><p>Clio Bronze × 1</p></div>
-      <div><img src="/images/GRANDE.jpg" alt="Adfest Grande" style="height: 80px;" /><p>Adfest Grande × 1</p></div>
-    </div>
-
-    <!-- Media Coverage -->
-    <h1 style="font-size: 2rem; font-weight: bold; margin: 4rem 0 2rem; text-align: center;">Media Coverage</h1>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-      <!-- Add your media coverage entries here, repeat this block for each item -->
-      <a href="https://2024.liaentries.com/winners/?id_entry=100830&id_medium=8&id_submedium=9&id_category=0&view=details&range=w&page=21&keyword=&medium=&category=&award=&country=&title_brand=&credits=&company_name=&city=&proceed_simple_search=false&proceed_advanced_search=false" target="_blank">
-        <img src="/images/Screenshot 2025-07-21 at 12.24.59 AM.png" alt="GOLD - PRINT" style="width: 100%;" />
-        <p><strong>GOLD - PRINT</strong><br/>London International Awards</p>
-      </a>
-      <a href="https://www.dandad.org/awards/professional/2025/240605/yoga-village/" target="_blank">
-        <img src="/images/Screenshot 2025-07-21 at 12.51.05 AM.png" alt="Yoga Village" style="width: 100%;" />
-        <p><strong>Yoga Village</strong><br/>D&AD</p>
-      </a>
-      <a href="https://www.digitaling.com/articles/1334752.html" target="_blank">
-        <img src="/images/remote_174305283672491.jpg" alt="Digitaling" style="width: 100%;" />
-        <p><strong>瑜伽村一战封神</strong><br/>Digitaling</p>
-      </a>
-      <a href="https://lbbonline.com/news/TBWAChinas-Towel-Percussion-Brings-New-Rhythm-to-Ancient-Tradition" target="_blank">
-        <img src="/images/Screenshot 2025-07-21 at 12.28.28 AM.png" alt="Towel Percussion" style="width: 100%;" />
-        <p><strong>Towel Percussion</strong><br/>Little Black Book</p>
-      </a>
-      <a href="https://marketech-apac.com/tbwa-group-china-yangzhou-tourism-revive-ancient-chinese-bathhouse-tradition-in-new-campaign/" target="_blank">
-        <img src="/images/Screenshot 2025-07-21 at 12.30.34 AM.png" alt="Yangzhou Tourism" style="width: 100%;" />
-        <p><strong>Yangzhou Tourism</strong><br/>MARKETECH APAC</p>
-      </a>
-      <!-- Continue adding more media coverage entries as needed -->
-    </div>
+    <h2>Media Coverage</h2>
+    <section class="media-grid">
+      <!-- Media coverage will be filled in part 2 and 3 of update -->
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>lx_kang@naver.com</p>
     <p>+86-173-2117-6604</p>
     <p>WeChat: lx_kang4</p>
     <p>©2025 Alexander Kang. All Rights Reserved.</p>
   </footer>
-
 </body>
+
 </html>
