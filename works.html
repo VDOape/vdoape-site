@@ -9,12 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/style.css" />
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
       background-color: #ff0000;
       color: white;
       font-family: 'Space Grotesk', sans-serif;
-      margin: 0;
-      padding: 0;
+      min-height: 100vh;
     }
 
     /* Header nav */
@@ -34,13 +35,25 @@
       text-decoration: underline;
     }
 
+    /* Collage image */
+    .collage {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto 2rem;
+    }
+
+    .collage img {
+      max-width: 90%;
+      height: auto;
+    }
+
     /* Subpage tabs as buttons */
     .subtabs {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1rem;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 3rem;
     }
 
     .subtabs a {
@@ -56,18 +69,6 @@
     .subtabs a:hover {
       background-color: white;
       color: #ff0000;
-    }
-
-    /* Collage image */
-    .collage {
-      display: flex;
-      justify-content: center;
-      margin: 2rem auto 4rem;
-    }
-
-    .collage img {
-      max-width: 90%;
-      height: auto;
     }
 
     /* Footer */
@@ -91,6 +92,11 @@
     <a href="/about.html">About</a>
   </nav>
 
+  <!-- Collage Image -->
+  <div class="collage">
+    <img src="/images/Collage.png" alt="Works Collage" />
+  </div>
+
   <!-- Subpage Tabs -->
   <div class="subtabs">
     <a href="/works/ai-films.html">AI Films</a>
@@ -98,11 +104,6 @@
     <a href="/works/animation.html">Animation</a>
     <a href="/works/documentary.html">Documentary</a>
     <a href="/works/branded-content.html">Branded Content</a>
-  </div>
-
-  <!-- Collage Image -->
-  <div class="collage">
-    <img src="/images/Collage.png" alt="Works Collage" />
   </div>
 
   <!-- Footer -->
