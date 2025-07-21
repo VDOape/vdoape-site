@@ -3,70 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Works — VDO.ape</title>
-  <link rel="stylesheet" href="/style.css" />
+  <title>Works | VDO.ape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #d70000;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #d70000;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+    main {
+      flex: 1;
+      padding: 6rem 1rem 2rem;
+      text-align: center;
+    }
+    .tab-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .tab-links a {
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: #d70000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: white;
+    }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
-
-  <!-- Top Navigation -->
-<nav class="flex justify-center gap-6 text-sm py-6 border-b border-white/10">
-  <a href="index.html" class="hover:underline">Home</a>
-  <a href="works.html" class="hover:underline">Works</a>
-  <a href="recognitions.html" class="hover:underline">Recognitions</a>
-  <a href="writings.html" class="hover:underline">Writings</a>
-  <a href="about.html" class="hover:underline">About</a>
-</nav>
-
-  <!-- Header -->
-  <header class="text-center py-10 px-4">
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">GOING PLACES FOR BRANDS.</h1>
-    <p class="text-lg md:text-xl text-gray-300">We go places for brands so that brands can go places.</p>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/works.html">Works</a>
+      <a href="/recognitions.html">Recognitions</a>
+      <a href="/writings.html">Writings</a>
+      <a href="/about.html">About</a>
+    </nav>
   </header>
 
-  <!-- Subpage Grid -->
-  <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pb-20 max-w-7xl mx-auto">
-    
-    <!-- AI Films -->
-    <a href="works/ai-films.html" class="group block cursor-pointer">
-      <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/1280x720.png?text=AI+Films" alt="AI Films" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
-      </div>
-      <p class="mt-3 text-center text-lg font-semibold">AI Films</p>
-    </a>
-
-    <!-- Live Action -->
-    <a href="works/live-action.html" class="group block cursor-pointer">
-      <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/1280x720.png?text=Live+Action" alt="Live Action" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
-      </div>
-      <p class="mt-3 text-center text-lg font-semibold">Live Action</p>
-    </a>
-
-    <!-- Animation -->
-    <a href="works/animation.html" class="group block cursor-pointer">
-      <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/1280x720.png?text=Animation" alt="Animation" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
-      </div>
-      <p class="mt-3 text-center text-lg font-semibold">Animation</p>
-    </a>
-
-    <!-- Documentary -->
-    <a href="works/documentary.html" class="group block cursor-pointer">
-      <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/1280x720.png?text=Documentary" alt="Documentary" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
-      </div>
-      <p class="mt-3 text-center text-lg font-semibold">Documentary</p>
-    </a>
-
-    <!-- Branded Content -->
-    <a href="works/branded-content.html" class="group block cursor-pointer">
-      <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/1280x720.png?text=Branded+Content" alt="Branded Content" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition">
-      </div>
-      <p class="mt-3 text-center text-lg font-semibold">Branded Content</p>
-    </a>
-
+  <main>
+    <div class="tab-links">
+      <a href="/works/ai-films.html">AI Films</a>
+      <a href="/works/live-action.html">Live Action</a>
+      <a href="/works/animation.html">Animation</a>
+      <a href="/works/documentary.html">Documentary</a>
+      <a href="/works/branded-content.html">Branded Content</a>
+    </div>
   </main>
 
+  <footer>
+    <p>lx_kang@naver.com<br>
+    +86-173-2117-6604<br>
+    WeChat: lx_kang4<br>
+    ©2025 Alexander Kang. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
