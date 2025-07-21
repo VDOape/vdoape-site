@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Works | VDO.ape</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/style.css" />
   <style>
     body {
@@ -16,6 +16,8 @@
       margin: 0;
       padding: 0;
     }
+
+    /* Header nav */
     .nav {
       display: flex;
       justify-content: center;
@@ -31,16 +33,44 @@
     .nav a:hover {
       text-decoration: underline;
     }
+
+    /* Subpage tabs as buttons */
+    .subtabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .subtabs a {
+      padding: 0.8rem 1.4rem;
+      border: 2px solid white;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .subtabs a:hover {
+      background-color: white;
+      color: #ff0000;
+    }
+
+    /* Collage image */
     .collage {
       display: flex;
       justify-content: center;
-      margin-top: 2rem;
-      margin-bottom: 4rem;
+      margin: 2rem auto 4rem;
     }
+
     .collage img {
       max-width: 90%;
       height: auto;
     }
+
+    /* Footer */
     .footer {
       text-align: center;
       padding: 2rem;
@@ -51,7 +81,8 @@
   </style>
 </head>
 <body>
-  <!-- Header Navigation -->
+
+  <!-- Main Header Navigation -->
   <nav class="nav">
     <a href="/">Home</a>
     <a href="/works/">Works</a>
@@ -60,17 +91,27 @@
     <a href="/about.html">About</a>
   </nav>
 
-  <!-- Collage Section -->
+  <!-- Subpage Tabs -->
+  <div class="subtabs">
+    <a href="/works/ai-films.html">AI Films</a>
+    <a href="/works/live-action.html">Live Action</a>
+    <a href="/works/animation.html">Animation</a>
+    <a href="/works/documentary.html">Documentary</a>
+    <a href="/works/branded-content.html">Branded Content</a>
+  </div>
+
+  <!-- Collage Image -->
   <div class="collage">
     <img src="/images/Collage.png" alt="Works Collage" />
   </div>
 
   <!-- Footer -->
   <footer class="footer">
-    lx_kang@naver.com<br />
-    +86-173-2117-6604<br />
-    WeChat: lx_kang4<br />
+    lx_kang@naver.com<br/>
+    +86-173-2117-6604<br/>
+    WeChat: lx_kang4<br/>
     ©2025 Alexander Kang. All Rights Reserved.
   </footer>
+
 </body>
 </html>
