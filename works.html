@@ -1,102 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Works | VDO.ape</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Space Grotesk', sans-serif;
-        background-color: #b30000;
-        color: white;
-      }
-      header, footer {
-        text-align: center;
-        padding: 20px 0;
-        border-bottom: 1px solid white;
-      }
-      nav a {
-        margin: 0 15px;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      nav a:hover {
-        text-decoration: underline;
-      }
-      .tabs {
-        display: flex;
-        justify-content: center;
-        margin: 40px 0;
-        gap: 30px;
-        border-bottom: 1px solid white;
-        padding-bottom: 20px;
-      }
-      .tabs a {
-        font-size: 20px;
-        color: white;
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .tabs a:hover {
-        text-decoration: underline;
-      }
-      .collage {
-        display: flex;
-        justify-content: center;
-        margin: 60px 0;
-      }
-      .collage img {
-        max-width: 90%;
-        height: auto;
-      }
-      footer {
-        border-top: 1px solid white;
-        margin-top: 60px;
-        padding-top: 20px;
-      }
-      .footer-content {
-        font-size: 14px;
-        line-height: 1.6;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/index.html">Home</a>
-        <a href="/works/index.html">Works</a>
-        <a href="/recognitions.html">Recognitions</a>
-        <a href="/writings.html">Writings</a>
-        <a href="/about.html">About</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | VDO.ape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    body {
+      background-color: #ff0000;
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 1.5rem 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    .collage {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    .collage img {
+      max-width: 90%;
+      height: auto;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/works/">Works</a>
+    <a href="/recognitions.html">Recognitions</a>
+    <a href="/writings.html">Writings</a>
+    <a href="/about.html">About</a>
+  </nav>
 
-    <main>
-      <section class="tabs">
-        <a href="/works/ai-films.html">AI Films</a>
-        <a href="/works/live-action.html">Live Action</a>
-        <a href="/works/animation.html">Animation</a>
-        <a href="/works/documentary.html">Documentary</a>
-        <a href="/works/branded-content.html">Branded Content</a>
-      </section>
+  <!-- Collage Section -->
+  <div class="collage">
+    <img src="/images/Collage.png" alt="Works Collage" />
+  </div>
 
-      <section class="collage">
-        <img src="/images/Collage.png" alt="Collage of Works">
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        lx_kang@naver.com<br />
-        +86-173-2117-6604<br />
-        WeChat: lx_kang4<br />
-        ©2025 Alexander Kang. All Rights Reserved.
-      </div>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    lx_kang@naver.com<br />
+    +86-173-2117-6604<br />
+    WeChat: lx_kang4<br />
+    ©2025 Alexander Kang. All Rights Reserved.
+  </footer>
+</body>
 </html>
