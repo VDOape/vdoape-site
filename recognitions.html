@@ -1,94 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Recognitions</title>
-  <link rel="stylesheet" href="/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Space Grotesk', sans-serif;
-      background-color: #ff0000;
-      color: white;
       margin: 0;
-      padding: 0;
+      background-color: #ffe034;
+      color: #000;
     }
 
-    header,
-    footer {
+    header, footer {
       text-align: center;
-      padding: 1.5rem;
-      font-size: 1rem;
+      padding: 2rem 1rem;
     }
 
     nav a {
-      margin: 0 1rem;
+      margin: 0 1.5rem;
       text-decoration: none;
-      color: white;
+      color: #000;
+      font-size: 1.1rem;
       font-weight: bold;
     }
 
-    h1,
-    h2 {
+    h1 {
       text-align: center;
-      font-weight: 700;
-      margin-bottom: 1rem;
+      margin: 2rem 0 1rem;
+      font-size: 2rem;
     }
 
     .awards-grid {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 1rem;
-      justify-items: center;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
       padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .award-item {
+    .award {
       text-align: center;
     }
 
-    .award-item img {
-      width: 80px;
+    .award img {
+      max-width: 100px;
       height: auto;
-      margin-bottom: 0.5rem;
     }
 
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
+    .award p {
+      margin-top: 0.5rem;
+      font-weight: bold;
     }
 
-    .media-item {
-      background: white;
-      color: black;
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
-
-    .media-item img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.25rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .media-item h3 {
-      margin: 0.5rem 0 0.25rem;
-      font-size: 1rem;
-    }
-
-    .media-item p {
+    footer {
       font-size: 0.9rem;
-      margin: 0;
+      border-top: 1px solid #000;
+      margin-top: 3rem;
     }
   </style>
 </head>
-
 <body>
+
   <header>
     <nav>
       <a href="/index.html">Home</a>
@@ -99,104 +74,66 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Awards</h1>
-    <section id="awards" style="padding: 4rem 2rem; background-color: #ff0000; color: white; font-family: 'Space Grotesk', sans-serif;">
-  <h2 style="text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">Awards</h2>
-  <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 2rem; justify-items: center;">
-    
-    <!-- Cannes Lions Gold -->
-    <div style="text-align: center;">
-      <img src="/images/Cannian_Lions.png" alt="Cannes Lions Gold" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+  <h1>Recognitions</h1>
+
+  <section class="awards-grid">
+    <div class="award">
+      <img src="/images/Cannian_Lions.png" alt="Cannes Lions Gold">
+      <p>Cannes Lions Gold × 1</p>
     </div>
-
-    <!-- Cannes Lions Bronze -->
-    <div style="text-align: center;">
-      <img src="/images/bronze-lion.png" alt="Cannes Lions Bronze" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/bronze-lion.png" alt="Cannes Lions Bronze">
+      <p>Cannes Lions Bronze × 1</p>
     </div>
-
-    <!-- The One Show Best of Discipline -->
-    <div style="text-align: center;">
-      <img src="/images/os-best-of-discipline-pencil-rank.png" alt="The One Show Best of Discipline" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/os-best-of-discipline-pencil-rank.png" alt="Best of Discipline">
+      <p>The One Show Best of Discipline × 1</p>
     </div>
-
-    <!-- The One Show Gold Pencil -->
-    <div style="text-align: center;">
-      <img src="/images/os-gold-pencil-rank.png" alt="The One Show Gold Pencil" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/os-gold-pencil-rank.png" alt="Gold Pencil">
+      <p>The One Show Gold Pencil × 1</p>
     </div>
-
-    <!-- The One Show Bronze Pencil -->
-    <div style="text-align: center;">
-      <img src="/images/os-bronze-pencil-rank.png" alt="The One Show Bronze Pencil" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/os-bronze-pencil-rank.png" alt="Bronze Pencil">
+      <p>The One Show Bronze Pencil × 1</p>
     </div>
-
-    <!-- London International Awards Gold -->
-    <div style="text-align: center;">
-      <img src="/images/12227641_10153674116675185_614845691565476466_n.jpg" alt="London International Awards Gold" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/12227641_10153674116675185_614845691565476466_n.jpg" alt="LIA Gold">
+      <p>London Int’l Awards Gold × 1</p>
     </div>
-
-    <!-- D&AD Graphite Pencil -->
-    <div style="text-align: center;">
-      <img src="/images/graphite.png" alt="D&AD Graphite Pencil" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/graphite.png" alt="Graphite Pencil">
+      <p>D&AD Graphite Pencil × 1</p>
     </div>
-
-    <!-- D&AD Wood Pencil -->
-    <div style="text-align: center;">
-      <img src="/images/wood.png" alt="D&AD Wood Pencil" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/wood.png" alt="Wood Pencil">
+      <p>D&AD Wood Pencil × 1</p>
     </div>
-
-    <!-- Spikes Asia Grand Prix -->
-    <div style="text-align: center;">
-      <img src="/images/spikes.png" alt="Spikes Asia Grand Prix" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/spikes.png" alt="Spikes Asia Grand Prix">
+      <p>Spikes Asia Grand Prix × 1</p>
     </div>
-
-    <!-- Spikes Asia Gold -->
-    <div style="text-align: center;">
-      <img src="/images/spikes.png" alt="Spikes Asia Gold" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/spikes.png" alt="Spikes Asia Gold">
+      <p>Spikes Asia Gold × 1</p>
     </div>
-
-    <!-- Spikes Asia Bronze -->
-    <div style="text-align: center;">
-      <img src="/images/spikes.png" alt="Spikes Asia Bronze" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 3</p>
+    <div class="award">
+      <img src="/images/spikes.png" alt="Spikes Asia Bronze">
+      <p>Spikes Asia Bronze × 3</p>
     </div>
-
-    <!-- Spikes Asia Agency of the Year by Market -->
-    <div style="text-align: center;">
-      <img src="/images/spikes.png" alt="Spikes Asia Agency of the Year by Market" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/spikes.png" alt="Spikes Asia AOTY">
+      <p>Spikes Asia AOTY by Market × 1</p>
     </div>
-
-    <!-- Clios Bronze -->
-    <div style="text-align: center;">
-      <img src="/images/Clio+-+Bronze.png" alt="Clios Bronze" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/Clio+-+Bronze.png" alt="Clio Bronze">
+      <p>Clios Bronze × 1</p>
     </div>
-
-    <!-- Adfest Grande -->
-    <div style="text-align: center;">
-      <img src="/images/GRANDE.jpg" alt="Adfest Grande" style="max-width: 100px;">
-      <p style="margin-top: 0.5rem;">× 1</p>
+    <div class="award">
+      <img src="/images/GRANDE.jpg" alt="Adfest Grande">
+      <p>Adfest Grande × 1</p>
     </div>
-
-  </div>
-</section>
-
-    <h2>Media Coverage</h2>
-    <section class="media-grid">
-      <!-- Media coverage will be filled in part 2 and 3 of update -->
-    </section>
-  </main>
+  </section>
 
   <footer>
     <p>lx_kang@naver.com</p>
@@ -204,6 +141,6 @@
     <p>WeChat: lx_kang4</p>
     <p>©2025 Alexander Kang. All Rights Reserved.</p>
   </footer>
-</body>
 
+</body>
 </html>
