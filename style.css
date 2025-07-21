@@ -85,3 +85,24 @@ footer {
 footer p {
   margin-bottom: 0.5rem;
 }
+
+/* Header navigation styling to match Works page */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #ff0000; /* red background to match Works page */
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
