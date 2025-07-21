@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Works | VDO.ape</title>
-  <link rel="stylesheet" href="/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works | VDO.ape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #c1121f;
+        color: white;
+      }
+      header, footer {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid white;
+      }
+      nav a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+        gap: 30px;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+      }
+      .tabs a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .tabs a:hover {
+        text-decoration: underline;
+      }
+      .collage {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+      }
+      .collage img {
+        max-width: 90%;
+        height: auto;
+      }
+      footer {
+        border-top: 1px solid white;
+        margin-top: 60px;
+        padding-top: 20px;
+      }
+      .footer-content {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/works/index.html">Works</a>
+        <a href="/recognitions.html">Recognitions</a>
+        <a href="/writings.html">Writings</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
 
-    html, body {
-      font-family: 'Space Grotesk', sans-serif;
-      background-color: #e60000; /* Red background */
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    <main>
+      <section class="tabs">
+        <a href="/works/ai-films.html">AI Films</a>
+        <a href="/works/live-action.html">Live Action</a>
+        <a href="/works/animation.html">Animation</a>
+        <a href="/works/documentary.html">Documentary</a>
+        <a href="/works/branded-content.html">Branded Content</a>
+      </section>
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #e60000;
-      text-align: center;
-      padding: 1rem 0;
-      z-index: 1000;
-    }
+      <section class="collage">
+        <img src="/images/Collage.png" alt="Collage of Works">
+      </section>
+    </main>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1.5rem;
-      font-size: 1.1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .content {
-      padding-top: 100px;
-      text-align: center;
-      flex-grow: 1;
-    }
-
-    .tabs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .tabs a {
-      background: white;
-      color: #e60000;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-
-    .tabs a:hover {
-      background: #ffe6e6;
-    }
-
-    .collage-container {
-      max-width: 1400px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .collage-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: white;
-      background-color: #e60000;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="/index.html">Home</a>
-    <a href="/works.html">Works</a>
-    <a href="/recognitions.html">Recognitions</a>
-    <a href="/writings.html">Writings</a>
-    <a href="/about.html">About</a>
-  </nav>
-
-  <div class="content">
-    <div class="tabs">
-      <a href="/works/ai-films.html">AI Films</a>
-      <a href="/works/live-action.html">Live Action</a>
-      <a href="/works/animation.html">Animation</a>
-      <a href="/works/documentary.html">Documentary</a>
-      <a href="/works/branded-content.html">Branded Content</a>
-    </div>
-
-    <div class="collage-container">
-      <img src="/images/Collage.png" alt="Works Collage">
-    </div>
-  </div>
-
-  <footer>
-    lx_kang@naver.com · +86-173-2117-6604 · WeChat: lx_kang4<br />
-    ©2025 Alexander Kang. All Rights Reserved.
-  </footer>
-</body>
+    <footer>
+      <div class="footer-content">
+        lx_kang@naver.com<br />
+        +86-173-2117-6604<br />
+        WeChat: lx_kang4<br />
+        ©2025 Alexander Kang. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
 </html>
