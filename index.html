@@ -1,56 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VDO.ape – Home</title>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VDO.ape – Home</title>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="/index.html">Home</a>
-    <a href="/works/ai-films.html">Works</a>
-    <a href="/recognitions.html">Recognitions</a>
-    <a href="/writings.html">Writings</a>
-    <a href="/about.html">About</a>
-  </nav>
+    <!-- Google Font: Space Grotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
 
-  <main>
-    <!-- Intro -->
-    <section class="intro">
-      <h1>VDO.ape = "video" + "guerrilla filmmaking"</h1>
-      <p>
-        I create and support films that are made<br>
-        in order to push the medium of cinema.​<br><br>
+    <!-- Custom Styles -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #d60000; /* Red */
+        color: white;
+      }
 
-        Those who don't wait for permissions to make films<br>
-        are welcome to collaborate.
-      </p>
-    </section>
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #d60000;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem 0;
+        z-index: 1000;
+      }
 
-    <!-- Showreel -->
-    <section>
-      <h2>Showreel</h2>
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      main {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .intro h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 3rem;
+      }
+
+      .showreel iframe {
+        width: 80vw;
+        height: 45vw;
+        max-width: 1280px;
+        max-height: 720px;
+        border: none;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 14px;
+        background-color: #d60000;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/works/ai-films.html">Works</a>
+      <a href="/recognitions.html">Recognitions</a>
+      <a href="/writings.html">Writings</a>
+      <a href="/about.html">About</a>
+    </nav>
+
+    <main>
+      <div class="intro">
+        <h1>VDO.ape</h1>
+      </div>
+
       <div class="showreel">
         <iframe 
-          src="https://player.vimeo.com/video/991421399?h=2b3eb4c96a" 
-          frameborder="0" 
-          allow="autoplay; fullscreen; picture-in-picture" 
+          src="https://player.vimeo.com/video/991421399?title=0&byline=0&portrait=0"
+          allow="autoplay; fullscreen"
           allowfullscreen
         ></iframe>
       </div>
-    </section>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>lx_kang@naver.com</p>
-    <p>+86-173-2117-6604</p>
-    <p>WeChat: lx_kang4</p>
-    <p>©2025 Alexander Kang. All Rights Reserved.</p>
-  </footer>
-
-</body>
+    <footer>
+      lx_kang@naver.com<br />
+      +86-173-2117-6604<br />
+      WeChat: lx_kang4<br />
+      <br />
+      ©2025 Alexander Kang. All Rights Reserved.
+    </footer>
+  </body>
 </html>
