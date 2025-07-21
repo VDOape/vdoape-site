@@ -9,13 +9,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/style.css" />
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
       background-color: #ff0000;
       color: white;
       font-family: 'Space Grotesk', sans-serif;
-      min-height: 100vh;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     /* Header nav */
@@ -26,11 +36,14 @@
       padding: 1.5rem 0;
       font-size: 1.25rem;
       font-weight: 700;
+      background-color: #ff0000;
     }
+
     .nav a {
       color: white;
       text-decoration: none;
     }
+
     .nav a:hover {
       text-decoration: underline;
     }
@@ -39,7 +52,8 @@
     .collage {
       display: flex;
       justify-content: center;
-      margin: 2rem auto 2rem;
+      margin: 2rem auto 0;
+      padding: 0 1rem;
     }
 
     .collage img {
@@ -47,7 +61,7 @@
       height: auto;
     }
 
-    /* Subpage tabs as buttons */
+    /* Subpage buttons */
     .subtabs {
       display: flex;
       justify-content: center;
@@ -74,16 +88,16 @@
     /* Footer */
     .footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
       line-height: 1.6;
-      color: white;
+      background-color: #ff0000;
     }
   </style>
 </head>
 <body>
 
-  <!-- Main Header Navigation -->
+  <!-- Navigation -->
   <nav class="nav">
     <a href="/">Home</a>
     <a href="/works/">Works</a>
@@ -92,12 +106,12 @@
     <a href="/about.html">About</a>
   </nav>
 
-  <!-- Collage Image -->
+  <!-- Collage -->
   <div class="collage">
     <img src="/images/Collage.png" alt="Works Collage" />
   </div>
 
-  <!-- Subpage Tabs -->
+  <!-- Tabs -->
   <div class="subtabs">
     <a href="/works/ai-films.html">AI Films</a>
     <a href="/works/live-action.html">Live Action</a>
