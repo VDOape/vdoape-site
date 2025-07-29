@@ -1,65 +1,87 @@
-/* Global resets and font */
+
+/* Base styles */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: #ff0000;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: #8e0000;
   color: white;
+  padding: 1rem 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Header navigation styling */
-.nav {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem 0;
-  font-size: 1.25rem;
-  font-weight: 700;
-  background-color: #ff0000;
-  font-family: 'Space Grotesk', sans-serif;
 }
 
-.nav a {
+nav li a {
   color: white;
   text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: block;
+  font-size: 1rem;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+nav li a:hover,
+nav li a.active {
+  background-color: #b30000;
 }
 
-/* Main content */
 main {
+  padding: 1rem;
+}
+
+.hero {
+  background-color: #8e0000;
+  color: white;
   padding: 4rem 1rem;
   text-align: center;
 }
 
-/* Footer styling */
-.footer {
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  text-align: center;
-  color: white;
-  font-size: 0.9rem;
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: #ff0000;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.footer p {
-  margin: 0.5rem 0;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-/* Responsive video container */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+/* Film grid */
+.film-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 1rem;
+}
+
+.film-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   overflow: hidden;
-  max-width: 960px;
-  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.video-container iframe {
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -67,33 +89,87 @@ main {
   height: 100%;
 }
 
-/* Tab buttons for subpages (Works landing page) */
-.subpage-tabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.film-card h3 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Awards grid */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+.award-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.award-item h4 {
+  margin: 0.5rem 0;
+}
+
+.award-item span.count {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8e0000;
+}
+
+/* Media coverage list */
+.media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.media-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.media-item h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.media-item a {
+  color: #8e0000;
+  text-decoration: none;
+}
+
+.media-item a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #8e0000;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
   margin-top: 2rem;
 }
 
-.subpage-tabs a {
-  padding: 0.75rem 1.5rem;
-  border: 2px solid white;
-  border-radius: 2rem;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.subpage-tabs a:hover {
-  background-color: white;
-  color: #ff0000;
-}
-
-/* Collage image */
-.collage {
-  max-width: 80%;
-  margin: 2rem auto;
-  display: block;
+@media (max-width: 600px) {
+  nav li a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
