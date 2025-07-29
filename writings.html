@@ -24,7 +24,44 @@
 </header>
 <main>
 <h1>Writings</h1>
-<p>Coming soon...</p>
+<div id="writings-list">Loading writings...</div>
+
+<script>
+// Dynamically fetch the list of PDF files from the GitHub repository and
+// render links for each. This allows the writings section to stay up to
+// date without hard‑coding every file name.
+fetch('https://api.github.com/repos/VDOape/vdoape-site/contents/writings')
+  .then(response => response.json())
+  .then(files => {
+    const container = document.getElementById('writings-list');
+    const ul = document.createElement('ul');
+    ul.style.listStyle = 'none';
+    ul.style.paddingLeft = '0';
+    files.forEach(file => {
+      if (file.name && file.name.toLowerCase().endsWith('.pdf')) {
+        const li = document.createElement('li');
+        li.style.marginBottom = '0.5rem';
+        const link = document.createElement('a');
+        // Use the raw download URL so the PDF opens directly
+        link.href = file.download_url;
+        link.textContent = file.name.replace(/\.pdf$/i, '');
+        link.target = '_blank';
+        link.rel = 'noopener';
+        li.appendChild(link);
+        ul.appendChild(li);
+      }
+    });
+    container.innerHTML = '';
+    if (ul.children.length > 0) {
+      container.appendChild(ul);
+    } else {
+      container.textContent = 'No writings available.';
+    }
+  })
+  .catch(error => {
+    document.getElementById('writings-list').textContent = 'Failed to load writings.';
+  });
+</script>
 
 </main>
 

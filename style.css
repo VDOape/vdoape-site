@@ -60,10 +60,18 @@ main {
 }
 
 /* Film grid */
+/*
+ * Film grid styles
+ *
+ * Increase the minimum column width and the space between cards so the
+ * thumbnails are larger and have breathing room. The aspect ratio is
+ * preserved via the video wrapper (see below).
+ */
 .film-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  /* Allow cards to grow but ensure a minimum width of 300px for a larger thumbnail */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 1rem;
 }
 
@@ -120,6 +128,21 @@ main {
   font-size: 1.2rem;
   font-weight: bold;
   color: #8e0000;
+}
+
+/* Award and media images */
+.award-item img {
+  display: block;
+  max-width: 80px;
+  margin: 0 auto 0.5rem auto;
+  height: auto;
+}
+
+.media-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
 }
 
 /* Media coverage list */
