@@ -181,6 +181,50 @@ footer {
   margin-top: 2rem;
 }
 
+/*
+ * Writings section styles
+ *
+ * The writings list is displayed as a responsive row of cards. Each writing
+ * entry appears as a card with a subtle border, drop shadow and a small
+ * icon indicating a document. The cards wrap gracefully on small screens
+ * and fill the available width on larger screens. Links adopt the site’s
+ * accent color and become underlined on hover. The icon is implemented
+ * using a Unicode page symbol so no external assets are required.
+ */
+#writings-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.writing-item {
+  flex: 1 1 280px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.writing-item .icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.writing-item a {
+  flex-grow: 1;
+  text-decoration: none;
+  color: #8e0000;
+  font-weight: bold;
+}
+
+.writing-item a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   nav li a {
     padding: 0.5rem;

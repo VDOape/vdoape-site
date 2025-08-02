@@ -34,27 +34,31 @@ fetch('https://api.github.com/repos/VDOape/vdoape-site/contents/writings')
   .then(response => response.json())
   .then(files => {
     const container = document.getElementById('writings-list');
-    const ul = document.createElement('ul');
-    ul.style.listStyle = 'none';
-    ul.style.paddingLeft = '0';
+    // Clear any loading text
+    container.innerHTML = '';
+    let hasItems = false;
     files.forEach(file => {
       if (file.name && file.name.toLowerCase().endsWith('.pdf')) {
-        const li = document.createElement('li');
-        li.style.marginBottom = '0.5rem';
+        hasItems = true;
+        // Create a card for each PDF. The card uses the styles defined in
+        // style.css (.writing-item) and includes a simple icon and the link.
+        const card = document.createElement('div');
+        card.className = 'writing-item';
+        const iconSpan = document.createElement('span');
+        iconSpan.className = 'icon';
+        // Use a Unicode page symbol (📄). Encode as surrogate pair for JS.
+        iconSpan.textContent = '\uD83D\uDCC4';
         const link = document.createElement('a');
-        // Use the raw download URL so the PDF opens directly
         link.href = file.download_url;
         link.textContent = file.name.replace(/\.pdf$/i, '');
         link.target = '_blank';
         link.rel = 'noopener';
-        li.appendChild(link);
-        ul.appendChild(li);
+        card.appendChild(iconSpan);
+        card.appendChild(link);
+        container.appendChild(card);
       }
     });
-    container.innerHTML = '';
-    if (ul.children.length > 0) {
-      container.appendChild(ul);
-    } else {
+    if (!hasItems) {
       container.textContent = 'No writings available.';
     }
   })
