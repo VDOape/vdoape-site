@@ -153,40 +153,46 @@ main {
  * the content and to create a consistent, organized layout. On
  * smaller screens the grid collapses to a single column.
  */
+/* 
+ * Media coverage list
+ *
+ * Display items in a spacious grid with vertical cards. Each card
+ * has a full-width image on top and text below. Images are
+ * constrained in height and use object-fit to crop gracefully.
+ */
 .media-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.5rem;
 }
 
-.media-item {
+ .media-item {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 0.75rem;
+  overflow: hidden;
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+  flex-direction: column;
 }
 
-.media-item img {
-  width: 120px;
-  height: auto;
-  border-radius: 4px;
+ .media-item img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
   margin: 0;
-  flex-shrink: 0;
 }
 
-.media-item h4 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1rem;
+ .media-item h4 {
+  margin: 0.75rem 1rem 0.25rem 1rem;
+  font-size: 1.1rem;
 }
 
-.media-item p {
-  margin: 0.25rem 0;
+ .media-item p {
+  margin: 0 1rem 0.5rem 1rem;
 }
 
 .media-item a {
