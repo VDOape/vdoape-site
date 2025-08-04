@@ -70,8 +70,20 @@ main {
 .film-grid {
   display: grid;
   gap: 1.5rem;
-  /* Allow cards to grow but ensure a minimum width of 300px for a larger thumbnail */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /*
+   * Increase the minimum column width to enlarge the video thumbnails.
+   * A minimum of 350px will create larger cards and reduce the number
+   * of columns on wider screens, making the videos more prominent.
+   */
+  /*
+   * Increase the minimum column width even further to make each
+   * film card more substantial. On wide screens this will reduce
+   * the number of columns and therefore enlarge the embedded video
+   * thumbnails. On narrow/mobile screens the cards will still
+   * shrink to fill the available space, so there is no horizontal
+   * scrolling.
+   */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-top: 1rem;
 }
 
@@ -100,7 +112,8 @@ main {
 .film-card h3 {
   margin: 0;
   padding: 0.5rem;
-  font-size: 1rem;
+  /* Increase title font size to pair with larger thumbnail */
+  font-size: 1.1rem;
   text-align: center;
 }
 
