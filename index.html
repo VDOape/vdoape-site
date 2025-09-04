@@ -11,13 +11,14 @@
 </head>
 <body>
   <!-- Primary Navigation -->
-  <nav class="nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="works.html">Works</a>
-    <a href="recognitions.html">Recognitions</a>
-    <a href="writings.html">Writings</a>
-    <a href="about.html">About</a>
-  </nav>
+    <nav class="nav">
+      <!-- Use root‑relative links so navigation works from any page -->
+      <a href="/" class="active">Home</a>
+      <a href="/works.html">Works</a>
+      <a href="/recognitions.html">Recognitions</a>
+      <a href="/writings.html">Writings</a>
+      <a href="/about.html">About</a>
+    </nav>
 
   <!-- Split Hero Section -->
   <section class="section-hero split-hero">
@@ -31,8 +32,13 @@
     </div>
     <div class="hero-right">
       <div class="hero-video-frame">
-        <!-- Placeholder for Vimeo showreel (replace with actual embedded video or thumbnail) -->
-        <img src="images/placeholder1.jpg" alt="Showreel thumbnail" />
+        <!-- Embed the Vimeo showreel directly. The iframe will fill the frame via CSS -->
+        <iframe
+          src="https://player.vimeo.com/video/991421399?title=0&byline=0&portrait=0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </section>
