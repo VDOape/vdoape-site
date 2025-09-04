@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works – VDO.ape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline styles for embedded video cards on the Works page -->
+  <style>
+    /* Video card for AI Films within the works grid */
+    .video-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .video-card .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+      border-radius: 0.5rem;
+      border: 2px solid var(--gray-light);
+    }
+    .video-card .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-card h3 {
+      margin: 0;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/works.html" class="active">Works</a>
+    <a href="/recognitions.html">Recognitions</a>
+    <a href="/writings.html">Writings</a>
+    <a href="/about.html">About</a>
+  </nav>
+
+  <!-- Works Page Content -->
+  <section class="works-page">
+    <h1>Works</h1>
+    <!-- Category Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="ai-films">AI Films</button>
+      <button class="tab" data-category="live-action">Live Action</button>
+      <button class="tab" data-category="animation">Animation</button>
+      <button class="tab" data-category="documentary">Documentary</button>
+      <button class="tab" data-category="branded">Branded</button>
+    </div>
+    <!-- Works Grid -->
+    <div class="works-grid">
+      <!-- AI Films -->
+      <!-- Embedded videos for AI film projects. Each video card maintains a 16:9 ratio and falls within the works grid. -->
+      <div class="video-card" data-category="ai-films">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/5NGSUvBVKS0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>The Native</h3>
+      </div>
+      <div class="video-card" data-category="ai-films">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/0EHj9E9240A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>How I Made My AI Animation I Tutorial</h3>
+      </div>
+      <div class="video-card" data-category="ai-films">
+        <div class="video-wrapper">
+          <!-- Start at 9 seconds for Shelter From the Storm -->
+          <iframe src="https://www.youtube.com/embed/wousfRoGmhw?start=9" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Shelter From the Storm</h3>
+      </div>
+      <div class="video-card" data-category="ai-films">
+        <div class="video-wrapper">
+          <!-- Start at 1 second for Island at Noon -->
+          <iframe src="https://www.youtube.com/embed/QOUB78-YZsQ?start=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Island at Noon</h3>
+      </div>
+      <div class="video-card" data-category="ai-films">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/MvNQHJ9-FBo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Paper Boat</h3>
+      </div>
+      <!-- Live Action -->
+      <!-- Embedded videos for live action projects. Each video card maintains a 16:9 ratio and falls within the works grid. -->
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/5aJFrhN1tJY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>LOVE DISTANCE</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/c1QDA8HgLzs?start=7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Dog Star</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/nmrDIddR8Xg?start=123" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Dye Love</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/RaQEi8Qbsr4?start=19" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Night Walker</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/RuD5iHEr6V8?start=33" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Continent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Em5rCL0kWLE?start=200" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Parabola</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/MKXR5V5Vnns?start=30" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Idle</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/AcqVTr3IuaY?start=108" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Of All the Universe</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/ZmTZVCRZnCc?start=188" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Tenant</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/YNfxOxkkPu4?start=130" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Square</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/IaRC-ntYahA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>A Love Story</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/vKisOneWhN0?start=80" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Xiamen Arrival</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/jhh1ob6XKd4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Thanks for Your Love 2022</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/XWU7h4IRNMI?start=24" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Planet B</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/523467872" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>GHOSTS - No.1: Abby</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/526886136" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>GHOSTS - No.2: Enzo</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/535821217" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>GHOSTS - No.3: Absolute</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/rgS4TBaFfyI?start=34" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Housekeeper</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/uxeur0Kyn5I?start=97" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Moth</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/pNOWbkP9DaY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Sha Tin</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/uAHNm8kNs1w?start=22" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Aqualung</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/rbhp6jJhC5I" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>BRIGHT NIGHT - 1st #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/0K6XK92s8rk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>FIERY DRUG - 2nd #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/OexPTYxj9JI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>DEAD MEAT - 3rd #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/kv2k25ZeU2g" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>100% HUMAN - 4th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/D9R3ufYIoMU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>TRULY HUMAN - 5th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/zIwzBZHwFbs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>ONE WHO LIVED HERE - 6th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/tuPTT016h00" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>CALL FROM AN AGENT - 7th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/0-5GQqc6dAE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>LONELY AS WELL - 8th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Z72FBnDJ6tE?start=6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>MY LOVE - 9th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/rwscC4yZ5IQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>DON'T GO - 10th #HomeContent</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/yiBdQZdClBI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Rain Cloud</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/9404mDOVF-8?start=23" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Tourist</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/1LdW_xizjjQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Wish You Were Here</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/X_3hZpPtKKI?start=16" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Shimmering Voice</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/I3u6SZ7ogCU?start=30" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Atom Hearts</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/o3XBQD4yHws" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Meteora</h3>
+      </div>
+      <div class="video-card" data-category="live-action">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/bkNSmeebl-c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Solstice</h3>
+      </div>
+      <!-- Animation -->
+      <!-- Embedded videos for animation projects. Each video card maintains a 16:9 ratio and falls within the works grid. -->
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/TzrG5KKzWv4?start=2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>The Leave</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-SH98LNRtQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Anniversary</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/JtKsLJYtO7I?start=26" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>the Prophet Show</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/_LGsjA-i0DE?start=17" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Peppertarian</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Sunyo_VFoJg?start=12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Book 846</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/4lN18CgdNAI?start=11" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Sand and Dust</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/wOEvjLP5ML8?start=6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>God of Air</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/cE_eXuV5iyU?start=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>All of It</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/X8z-vljvISo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>THE BUREAUCRATS: No.1 BANKER</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Z768zgJuF20?start=7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>THE BUREAUCRATS: No.2 POLICE</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/MDxmFy8HaZY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>THE BUREAUCRATS: No.3 MAILMAN</h3>
+      </div>
+      <div class="video-card" data-category="animation">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/tS-fv1C_320?start=65" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Seed</h3>
+      </div>
+      <!-- Documentary -->
+      <!-- Embedded videos for documentary projects. Each video card maintains a 16:9 ratio and falls within the works grid. -->
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/U1UfnKfDSvU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Nanjing Duck Blood Soup</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/G3O-Y1c3ck8?start=412" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Shanghai on Air</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/8nxaF3Z3gzM?start=14" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Copy of Her Echo</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/CSOxP1C2zKg?start=2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Pure.</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/QLFLYdA394E" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>2024 INK Tattoo Festival Shanghai</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/457391215" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>The Unreasonables Season Trailer</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/_S4oHJzknxI?start=2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Life Around Pizza</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VQKfqy8eeeg?start=2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Radioactivity</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://player.vimeo.com/video/421297655" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>The Iron Hammer Trailer: We Are One Global Film Festival</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/HOoRVfW957w?start=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Body Song</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/Z6ylgZUIG0M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Message</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/cHc0NLUEh18" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>行动的真迹工作坊</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/K3oP2urNyfQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>亲子工作坊</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/hUEvvzlPsHM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Tracing Ben (part 1)</h3>
+      </div>
+      <div class="video-card" data-category="documentary">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/vm_PLVFrIHs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Tracing Ben (part 2)</h3>
+      </div>
+      <!-- Branded -->
+<!-- Embedded videos for branded projects. Each card is a video wrapper with title. -->
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1100812383" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas 2025 China High School Football League</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1082143727" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Towel Percussion</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1082189854" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>It's Hot Pot Time!</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/924896083" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas I Sport No Matter</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/925777733" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Project Jupiter</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1055510278" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Project Jupiter Cannes Lions</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/924912911" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas I Yoga Village</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1055509252" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas I Yoga Village Cannes Lions</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/1002264643" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>MINI 65th Birthday Surprise</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/828297408" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Nothing But Sheer Joy</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/743698211" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Nothing But Sheer Joy Cannes Lions</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/867121720" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas Zero I Swift Criminal</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/493339487" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>UGG I Holiday</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/gHr3eEWJnLk?start=2" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Hard-Headed</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/zfc8IBAwASs?start=1" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Washed Out</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/790798287" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Translating Joy</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/849054576" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Translating Joy Cannes Lions</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/852242114" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Bava ReCollection Vlog</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/821906287" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I Bava Vlog@Shanghai BMW Experience Center</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/821910007" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I M Love</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/718796835" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas NEO I Neighbors</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/744248556" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>adidas Neo I The Neo Gymnastics Cannes Lions</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/767945750" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I XM Shanghai Launch Event Teaser</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/848967443" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>BMW I XM Beijing Event Teaser</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/344033908" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft Windows I Long Battery</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/344035788" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft Windows I 2 in 1</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/344038176" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft Windows I Inking</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/397098914" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Laughter Is Contagious</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/660599702" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Gatorade I TikTok "Basketball"</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/660600687" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Gatorade I TikTok "Football"</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/660600140" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Gatorade I TikTok "Badminton"</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/390227294" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>JPretty I TikTok 1</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/390227327" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>JPretty I TikTok 2</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/390227361" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>JPretty I TikTok 3</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/493342107" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>NBA I Basketball Love</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/276462353" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Bose I Brand TVC</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/270888148" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Volvo I S90 TVC</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/288700077" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Tuborg I Open For More</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/376612175" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft Office 365 I KOL Video</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/311188725" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft MPC I Birthday</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/311192528" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Microsoft MPC I Surprise Gift</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/311169270" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Kinder Seasonal I CNY</h3>
+        </div>
+        <div class="video-card" data-category="branded">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/176512484" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Inside Sanli Shang</h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded view" />
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
