@@ -11,7 +11,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Tab filtering for Works page
   const tabs = document.querySelectorAll('.tab');
-  const cards = document.querySelectorAll('.work-card');
+  // Select all project elements within the works grid that have a data-category attribute.
+  // This includes both image-based work cards and embedded video cards for AI films.
+  const cards = document.querySelectorAll('.works-grid [data-category]');
   if (tabs.length && cards.length) {
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
