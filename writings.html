@@ -1,77 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Writings | VDO.ape</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writings – VDO.ape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="ai-films.html">AI Films</a></li>
-    <li><a href="live-action.html">Live Action</a></li>
-    <li><a href="animation.html">Animation</a></li>
-    <li><a href="documentary.html">Documentary</a></li>
-    <li><a href="branded-content.html">Branded Content</a></li>
-    <li><a href="recognitions.html">Recognitions</a></li>
-    <li><a href="writings.html" class="active">Writings</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-</header>
-<main>
-<h1>Writings</h1>
-<div id="writings-list">Loading writings...</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="recognitions.html">Recognitions</a>
+    <a href="writings.html" class="active">Writings</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<script>
-// Dynamically fetch the list of PDF files from the GitHub repository and
-// render links for each. This allows the writings section to stay up to
-// date without hard‑coding every file name.
-fetch('https://api.github.com/repos/VDOape/vdoape-site/contents/writings')
-  .then(response => response.json())
-  .then(files => {
-    const container = document.getElementById('writings-list');
-    // Clear any loading text
-    container.innerHTML = '';
-    let hasItems = false;
-    files.forEach(file => {
-      if (file.name && file.name.toLowerCase().endsWith('.pdf')) {
-        hasItems = true;
-        // Create a card for each PDF. The card uses the styles defined in
-        // style.css (.writing-item) and includes a simple icon and the link.
-        const card = document.createElement('div');
-        card.className = 'writing-item';
-        const iconSpan = document.createElement('span');
-        iconSpan.className = 'icon';
-        // Use a Unicode page symbol (📄). Encode as surrogate pair for JS.
-        iconSpan.textContent = '\uD83D\uDCC4';
-        const link = document.createElement('a');
-        link.href = file.download_url;
-        link.textContent = file.name.replace(/\.pdf$/i, '');
-        link.target = '_blank';
-        link.rel = 'noopener';
-        card.appendChild(iconSpan);
-        card.appendChild(link);
-        container.appendChild(card);
-      }
-    });
-    if (!hasItems) {
-      container.textContent = 'No writings available.';
-    }
-  })
-  .catch(error => {
-    document.getElementById('writings-list').textContent = 'Failed to load writings.';
-  });
-</script>
+  <section class="writings-page">
+    <h1>Writings</h1>
+    <p>
+      Insights, process notes and essays about the intersections of cinema, design and
+      emerging technologies. Click through to read each piece (PDF links are placeholders).
+    </p>
+    <div class="writing-item">
+      <span class="title">Seeing Through Machines</span>
+      <a href="writings/seeing-through-machines.pdf" target="_blank">Read</a>
+    </div>
+    <div class="writing-item">
+      <span class="title">Narratives in the Age of AI</span>
+      <a href="writings/narratives-in-ai.pdf" target="_blank">Read</a>
+    </div>
+    <div class="writing-item">
+      <span class="title">The Design of Moving Images</span>
+      <a href="writings/design-of-moving-images.pdf" target="_blank">Read</a>
+    </div>
+  </section>
 
-</main>
-
-<footer>
-  <p>Contact: lx_kang@naver.com | +86-173-2117-6604 | WeChat: lx_kang4</p>
-  <p>&copy;2025 Alexander Kang. All Rights Reserved.</p>
-</footer>
+  <footer class="footer">
+    <p>&copy; 2025 VDO.ape</p>
+  </footer>
 </body>
 </html>

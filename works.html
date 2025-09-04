@@ -2,132 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Works | VDO.ape</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="/style.css" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      background-color: #0719f5;
-      color: white;
-      font-family: 'Space Grotesk', sans-serif;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    /* Header nav */
-    .nav {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      padding: 1.5rem 0;
-      font-size: 1.25rem;
-      font-weight: 700;
-      background-color: #0719f5;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Collage image */
-    .collage {
-      display: flex;
-      justify-content: center;
-      margin: 2rem auto 0;
-      padding: 0 1rem;
-    }
-
-    .collage img {
-      max-width: 90%;
-      height: auto;
-    }
-
-    /* Subpage buttons */
-    .subtabs {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 2rem 1rem 3rem;
-    }
-
-    .subtabs a {
-      padding: 0.8rem 1.4rem;
-      border: 2px solid white;
-      border-radius: 999px;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .subtabs a:hover {
-      background-color: white;
-      color: #0719f5;
-    }
-
-    /* Footer */
-    .footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: white;
-      background-color: #0719f5;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works – VDO.ape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="nav">
-    <a href="/">Home</a>
-    <a href="/works/">Works</a>
-    <a href="/recognitions.html">Recognitions</a>
-    <a href="/writings.html">Writings</a>
-    <a href="/about.html">About</a>
+    <a href="index.html">Home</a>
+    <a href="works.html" class="active">Works</a>
+    <a href="recognitions.html">Recognitions</a>
+    <a href="writings.html">Writings</a>
+    <a href="about.html">About</a>
   </nav>
 
-  <!-- Collage -->
-  <div class="collage">
-    <img src="/images/Collage.png" alt="Works Collage" />
+  <!-- Works Page Content -->
+  <section class="works-page">
+    <h1>Works</h1>
+    <!-- Category Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="ai-films">AI Films</button>
+      <button class="tab" data-category="live-action">Live Action</button>
+      <button class="tab" data-category="animation">Animation</button>
+      <button class="tab" data-category="documentary">Documentary</button>
+      <button class="tab" data-category="branded">Branded</button>
+    </div>
+    <!-- Works Grid -->
+    <div class="works-grid">
+      <!-- AI Films -->
+      <div class="work-card" data-category="ai-films">
+        <img src="images/placeholder2.jpg" alt="AI Film 1" />
+        <div class="card-caption">Echoes of Tomorrow</div>
+      </div>
+      <div class="work-card" data-category="ai-films">
+        <img src="images/placeholder3.jpg" alt="AI Film 2" />
+        <div class="card-caption">Synthetic Horizons</div>
+      </div>
+      <!-- Live Action -->
+      <div class="work-card" data-category="live-action">
+        <img src="images/placeholder4.jpg" alt="Live Action 1" />
+        <div class="card-caption">Between Realities</div>
+      </div>
+      <div class="work-card" data-category="live-action">
+        <img src="images/placeholder1.jpg" alt="Live Action 2" />
+        <div class="card-caption">Static Flow</div>
+      </div>
+      <!-- Animation -->
+      <div class="work-card" data-category="animation">
+        <img src="images/placeholder3.jpg" alt="Animation 1" />
+        <div class="card-caption">Liquid Dreams</div>
+      </div>
+      <!-- Documentary -->
+      <div class="work-card" data-category="documentary">
+        <img src="images/placeholder4.jpg" alt="Documentary 1" />
+        <div class="card-caption">Fragments of Truth</div>
+      </div>
+      <!-- Branded -->
+      <div class="work-card" data-category="branded">
+        <img src="images/placeholder2.jpg" alt="Branded 1" />
+        <div class="card-caption">Brands Unbound</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img src="" alt="Expanded view" />
   </div>
 
-  <!-- Tabs -->
-  <div class="subtabs">
-    <a href="/works/ai-films.html">AI Films</a>
-    <a href="/works/live-action.html">Live Action</a>
-    <a href="/works/animation.html">Animation</a>
-    <a href="/works/documentary.html">Documentary</a>
-    <a href="/works/branded-content.html">Branded Content</a>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    lx_kang@naver.com<br/>
-    +86-173-2117-6604<br/>
-    WeChat: lx_kang4<br/>
-    ©2025 Alexander Kang. All Rights Reserved.
-  </footer>
-
+  <!-- JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
