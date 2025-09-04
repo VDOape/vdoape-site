@@ -3,43 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | VDO.ape</title>
-  <link rel="stylesheet" href="style.css">
+  <title>VDO.ape – Film Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-<nav>
-  <ul>
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="ai-films.html">AI Films</a></li>
-    <li><a href="live-action.html">Live Action</a></li>
-    <li><a href="animation.html">Animation</a></li>
-    <li><a href="documentary.html">Documentary</a></li>
-    <li><a href="branded-content.html">Branded Content</a></li>
-    <li><a href="recognitions.html">Recognitions</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-</header>
-<main>
+  <nav class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="works.html">Works</a>
+    <a href="recognitions.html">Recognitions</a>
+    <a href="writings.html">Writings</a>
+    <a href="about.html">About</a>
+  </nav>
 
-<section class="hero">
-  <h1>The Native</h1>
-  <p>Our newest AI Short Film is here. It tackles one of my life's biggest questions: <em>where is home?</em></p>
-  <div class="video-wrapper" style="max-width: 800px; margin: 0 auto;">
-    <iframe src="https://www.youtube.com/embed/5NGSUvBVKS0" frameborder="0" allowfullscreen loading="lazy"></iframe>
-  </div>
-</section>
-<section class="intro">
-<p>VDO.ape = "video" + "guerrilla filmmaking"</p>
-<p>This is my nickname. I create and support films that are made in order to push the medium of cinema. Those who don't wait for permissions to make films are welcome to collaborate.</p>
-</section>
-</main>
+  <section class="section-hero split-hero">
+    <div class="hero-left">
+      <h1 class="display-xxl">VDO.ape</h1>
+      <p class="manifesto">
+        A creative studio exploring the intersection of film, art and technology. We craft
+        evocative experiences through moving images, blurring the boundaries of reality and
+        imagination.
+      </p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-video-frame">
+        <img src="images/placeholder1.jpg" alt="Showreel thumbnail" />
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>Contact: lx_kang@naver.com | +86-173-2117-6604 | WeChat: lx_kang4</p>
-  <p>&copy;2025 Alexander Kang. All Rights Reserved.</p>
-</footer>
+  <section class="works-teaser">
+    <h2 class="section-heading">Featured Works</h2>
+    <div class="teaser-grid">
+      <a href="works.html" class="work-teaser-card">
+        <img src="images/placeholder2.jpg" alt="Work 1" />
+        <div class="teaser-caption">
+          <span class="category">AI Films</span>
+          <span class="title">Echoes of Tomorrow</span>
+        </div>
+      </a>
+      <a href="works.html" class="work-teaser-card">
+        <img src="images/placeholder3.jpg" alt="Work 2" />
+        <div class="teaser-caption">
+          <span class="category">Live Action</span>
+          <span class="title">Between Realities</span>
+        </div>
+      </a>
+      <a href="works.html" class="work-teaser-card">
+        <img src="images/placeholder4.jpg" alt="Work 3" />
+        <div class="teaser-caption">
+          <span class="category">Animation</span>
+          <span class="title">Liquid Dreams</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 VDO.ape</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
