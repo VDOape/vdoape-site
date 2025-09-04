@@ -21,11 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
         tabs.forEach((t) => t.classList.remove('active'));
         tab.classList.add('active');
 
-        const category = tab.dataset.category;
+        // Determine which category to filter by; map custom names to internal ones
+        let category = tab.dataset.category;
+        // Normalize custom categories: branded-content tab filters the 'branded' cards
+        let normalizedCategory = category;
+        if (category === 'branded-content') {
+          normalizedCategory = 'branded';
+        }
+
         cards.forEach((card) => {
-          // Show all cards if category is 'all' otherwise filter
           const cardCategory = card.dataset.category;
-          if (category === 'all' || cardCategory === category) {
+          // Show all cards if 'all' is still used elsewhere; otherwise filter by normalized category
+          if (normalizedCategory === 'all' || cardCategory === normalizedCategory) {
             card.style.display = '';
           } else {
             card.style.display = 'none';
@@ -33,6 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+
+    // On initial load, filter cards based on the tab marked as active
+    const activeTab = document.querySelector('.tab.active');
+    if (activeTab) {
+      // Simulate a click to apply filtering logic and set the correct active styling
+      activeTab.click();
+    }
   }
 
   // Lightbox for viewing project thumbnails
