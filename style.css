@@ -402,6 +402,18 @@ h4 {
       object-fit: contain;
     }
 
+    /* Media coverage section uses much larger logos (4x the original 40px size) and extra spacing */
+    .media-list .award img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+    }
+
+    .media-list {
+      /* Add generous space above the media coverage section to separate it from awards */
+      margin-top: 4rem;
+    }
+
 /* Writings page */
 .writings-page {
   padding-top: 80px;
