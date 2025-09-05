@@ -390,11 +390,17 @@ h4 {
   gap: 0.5rem;
 }
 
-.award img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
+    /*
+     * Increase the size of award and media icons on the recognitions page. The original
+     * dimensions were 40px by 40px; these new values make the images twice as large
+     * without altering the aspect ratio. This ensures the award badges are more
+     * prominent while preserving the responsive grid layout.
+     */
+    .award img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
 
 /* Writings page */
 .writings-page {
